@@ -1,9 +1,12 @@
-# Miscellaneous
+# ==========================
+# MISC
+# ==========================
 *.class
 *.log
 *.pyc
 *.swp
 .DS_Store
+*.tmp
 .atom/
 .build/
 .buildlog/
@@ -12,34 +15,80 @@
 .swiftpm/
 migrate_working_dir/
 
-# IntelliJ related
+# ==========================
+# IDE / EDITORS
+# ==========================
 *.iml
 *.ipr
 *.iws
 .idea/
+.vscode/
+*.code-workspace
+#.vscode/  
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# ==========================
+# FLUTTER / DART
+# ==========================
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
-/coverage/
-
-# Symbolication related
+build/
+coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# ==========================
+# ANDROID
+# ==========================
+**/android/.gradle/
+**/android/captures/
+**/android/.idea/
+**/android/local.properties
+**/android/build/
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# ==========================
+# IOS
+# ==========================
+**/ios/Pods/
+**/ios/Podfile.lock
+**/ios/.symlinks/
+**/ios/build/
+*.xcworkspace
+xcuserdata/
+DerivedData/
+*.xcuserstate
+**/ios/Flutter/engine/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/App.framework
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# ==========================
+# MACOS
+# ==========================
+**/macos/Pods/
+**/macos/Podfile.lock
+**/macos/build/
+**/macos/Flutter/ephemeral/
+**/macos/Runner/GeneratedPluginRegistrant.*
+ 
+# Xcode workspace generated files
+**/*.xcworkspace/
+**/xcshareddata/
+**/xcuserdata/
+DerivedData/
+*.xcuserstate
+# ==========================
+# NODE / HUSKY
+# ==========================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+!/.husky/()
